@@ -11,7 +11,7 @@ return [
     | login page.
     |
     */
-    'name' => 'Laravel-admin',
+    'name' => '65 e-school',
 
     /*
     |--------------------------------------------------------------------------
@@ -22,7 +22,7 @@ return [
     | `img` tag, eg '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo' => '<b>Laravel</b> admin',
+    'logo' => '<b>65</b> e-School',
 
     /*
     |--------------------------------------------------------------------------
@@ -34,7 +34,7 @@ return [
     | '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo-mini' => '<b>La</b>',
+    'logo-mini' => '<b>eS</b>',
 
     /*
     |--------------------------------------------------------------------------
@@ -351,6 +351,22 @@ return [
     |
     */
     'extensions' => [
+      'cropper' => [
+        'enable' => true,
+      ],
+      'grid-lightbox' => [
+        'enable' => true,
+      ],
+      'chartjs' => [
+        'enable' => true,
+      ],
+      'auth-attempts' => [
+         // set to false if you want to disable this extension
+         'enable' => true,
 
-    ],
+         // configuration
+         'maxAttempts'  => 5,
+         'decayMinutes' => 1,
+        ]
+      ]
 ];
