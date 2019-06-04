@@ -8,9 +8,11 @@
 
         &nbsp;&nbsp;&nbsp;&nbsp;
 
-        <strong>Version</strong>&nbsp;&nbsp; {!! env('APP_VERSION') !!}
+        @if(config('admin.show_version'))
+        <strong>Version</strong>&nbsp;&nbsp; {!! \Encore\Admin\Admin::VERSION !!}
+        @endif
 
     </div>
     <!-- Default to the left -->
-    <strong>Powered by <a href="http://sistem65.com/">{!! env('APP_NAME') !!}</a></strong>
+    <strong>Powered by <a href="https://github.com/z-song/laravel-admin" target="_blank">laravel-admin</a></strong>
 </footer>

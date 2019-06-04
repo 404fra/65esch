@@ -1,0 +1,26 @@
+{
+    "name": "enamlima/schoolconnect",
+    "description": "School Connect Application",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sinnbo",
+            "email": "sinnbo@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Enamlima\\Schoolconnect\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Enamlima\\Schoolconnect\\SchoolConnectServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
